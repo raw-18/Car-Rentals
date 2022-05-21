@@ -1,0 +1,236 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+  font: 400 15px/1.8 "Lato", sans-serif;
+  color: #777;
+}
+
+blink,
+.blink {
+  animation: blinker 2s linear infinite;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+.nav-tab {
+  float: right;
+  margin-right: 15px;
+  background-color: transparent;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+.nav-tab:focus {
+  outline: 0;
+}
+
+.nav-tab .icon-bar {
+  display: block;
+  width: 22px;
+  height: 2px;
+  border-radius: 1px;
+}
+
+.nav-tab .icon-bar + .icon-bar {
+  margin-top: 4px;
+}
+
+@media (min-width: 768px) {
+  .nav-tab {
+    display: none;
+  }
+}
+
+.navbar-custom {
+  margin-bottom: 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  text-transform: uppercase;
+  font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: white;
+}
+.navbar-custom .navbar-brand {
+  font-size: 20px;
+  text-transform: none;
+  letter-spacing: 1px;
+}
+
+.navbar-custom .navbar-brand:focus {
+  outline: 0;
+}
+
+.navbar-custom .navbar-brand .navbar-toggle {
+  padding: 4px 6px;
+  font-size: 16px;
+  color: #fff;
+}
+
+.navbar-custom .navbar-brand .navbar-toggle:focus,
+.navbar-custom .navbar-brand .navbar-toggle:active {
+  outline: 0;
+}
+
+.navbar-custom a {
+}
+
+.navbar-custom .nav li a {
+  -webkit-transition: background 0.3s ease-in-out;
+  -moz-transition: background 0.3s ease-in-out;
+  transition: background 0.3s ease-in-out;
+}
+
+.navbar-custom .nav li a:hover {
+  outline: 0;
+  color: #1ba39c;
+  background-color: transparent;
+}
+
+.navbar-custom .nav li a:focus,
+.navbar-custom .nav li a:active {
+  outline: 0;
+  background-color: transparent;
+}
+
+.navbar-custom .nav li.active {
+  outline: 0;
+}
+
+.navbar-custom .nav li.active a {
+  color: #1ba39c;
+}
+
+.navbar-custom .nav li.active a:hover {
+  color: #1ba39c;
+}
+
+@media (min-width: 768px) {
+  .navbar-custom {
+    padding: 20px 0;
+    border-bottom: 0;
+    font-size: 13px;
+    background: 0 0;
+    -webkit-transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
+    -moz-transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
+    transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
+  }
+  .navbar-custom.top-nav-collapse {
+    padding: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    color: #333;
+    background: #fff;
+  }
+  .navbar-custom.top-nav-collapse a {
+    color: #333;
+    display: inline-block;
+  }
+}
+
+.page-header{
+    background-image: url("../../assets/img/about\ back.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 0 none;
+    margin: 6% auto;
+    padding: 0;
+    position: relative;
+}
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.page-header_wrap{
+    padding: 60px 0;
+    position: relative;
+    text-align: center;
+}
+.page-heading{
+  z-index: 1;
+  position: relative;
+}
+.page-heading h1 {
+  font-size: 40px;
+  color: white;
+  margin: auto;
+  font-weight: 900;
+}
+.coustom-breadcrumb{
+  margin: 0 auto;
+  padding:0 10px;
+  position: relative;
+  z-index: 1;
+}
+.coustom-breadcrumb li{
+  font-size: 14px;
+  line-height: 35px;
+}
+.coustom-breadcrumb li{
+  color: white;
+  display: inline-block;
+  list-style: outside none none;
+  margin: 0 auto;
+  padding: 0 10px;
+  position: relative;
+}
+.coustom-breadcrumb a{
+  color: white;
+}
+.coustom-breadcrumb a::after{
+  color: white;
+  content: "";
+  font-family: fontawesome;
+  position: absolute;
+  right: -5px;
+  vertical-align: middle;
+}
+.dark-overlay{
+  background: rgba(0, 0, 0, 0.75) none repeat scroll 0 0;
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+p{
+  font-size: 17px;
+  line-height: 26px;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+.back-top {
+  bottom: 35px;
+  position: fixed;
+  right: 33px;
+  z-index: 1;
+}
+.back-top a {
+  border-radius: 50%;
+  color: white;
+  background: #228dcb none repeat scroll 0 0;
+  fill: #228dcb;
+  display: block;
+  font-size: 19px;
+  height: 40px;
+  line-height: 36px;
+  text-align: center;
+  vertical-align: top;
+  width: 40px;
+}
+.fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing:antialiased;
+}

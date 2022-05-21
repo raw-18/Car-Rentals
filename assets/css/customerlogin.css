@@ -1,0 +1,144 @@
+body,
+html {
+  height: 100%;
+}
+.jumbotron {
+  background: rgb(225, 240, 238); /*  Transparent background */
+}
+body {
+  padding-top: 50px;
+  background-color: #89d4cf;
+  background-image: linear-gradient(315deg, #89d4cf 0%, #6e45e1 74%);
+  position: relative;
+  opacity: 0.9;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: green;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+#myBtn:hover {
+  background-color: darkgreen;
+  color: white;
+}
+
+.bg-4 {
+  background-color: #2f2f2f;
+  color: #ffffff;
+}
+* {
+  margin: 0;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+.box .title {
+  color: #2f2f2f;
+}
+.main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  height: 400px;
+  display: inline-flex;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px -10px rgba(0, 0, 0, 0.8);
+}
+
+.main .left {
+  width: 250px;
+  height: 400px;
+  background: url("../../assets/img/cust.jpg");
+  box-sizing: border-box;
+  border-radius: 15px 0 0 15px;
+}
+
+.main .left h1 {
+  margin: 45px;
+  color: white;
+  text-shadow: 0px 2px 5px black;
+}
+
+span {
+  color: black;
+}
+
+.main .right {
+  width: 350px;
+  height: 400px;
+  background-color: #f907fc;
+  background-image: linear-gradient(315deg, #f907fc 0%, #05d6d9 74%);
+  border-radius: 0 15px 15px 0;
+}
+
+.main .right .form {
+  margin: 30px;
+}
+
+.main .right .form input {
+  margin: 10px;
+  outline-style: solid;
+  outline-color: #2f2f2f;
+  /* width: 200px;
+  height: 30px;
+  padding: 2px; */
+  outline: none;
+  color: white;
+}
+.main .right .row {
+  width: 200px;
+  height: 30px;
+  padding: 2px;
+  outline: none;
+}
+
+.main .right .form button {
+  width: 90px;
+  height: 30px;
+  margin: 15px;
+  border-radius: 7%;
+  margin-right: 10px;
+  background: rgb(255, 254, 254);
+  color: rgb(0, 0, 0);
+  font-family: "Lora", serif;
+  font-family: "Playfair Display", serif;
+  font-size: 13px;
+  cursor: pointer;
+  border: none;
+}
+
+.main .right .form p {
+  margin: 20px;
+}
+
+.main .right .form a {
+  color: rgb(255, 255, 255);
+  margin: -70px;
+  text-decoration: none;
+}
+
+footer {
+  display: block;
+}
+
+.edit {
+  text-shadow: 2px 2px 5px lightgreen;
+  color: green;
+}
